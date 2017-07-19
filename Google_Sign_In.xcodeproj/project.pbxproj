@@ -12,6 +12,8 @@
 		18067C3C1F1FC3FB008818E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18067C3A1F1FC3FB008818E5 /* Main.storyboard */; };
 		18067C3E1F1FC3FB008818E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18067C3D1F1FC3FB008818E5 /* Assets.xcassets */; };
 		18067C411F1FC3FB008818E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18067C3F1F1FC3FB008818E5 /* LaunchScreen.storyboard */; };
+		1858C7171F1FCDB000F50E9E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1858C7161F1FCDB000F50E9E /* GoogleService-Info.plist */; };
+		B0B5BC398CB69C9FE624E176 /* Pods_Google_Sign_In.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35F31C5BA181AEEC2DBF63E /* Pods_Google_Sign_In.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		18067C3D1F1FC3FB008818E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18067C401F1FC3FB008818E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18067C421F1FC3FB008818E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1858C7161F1FCDB000F50E9E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8B6F03AE5392009C8B8BC798 /* Pods-Google_Sign_In.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google_Sign_In.release.xcconfig"; path = "Pods/Target Support Files/Pods-Google_Sign_In/Pods-Google_Sign_In.release.xcconfig"; sourceTree = "<group>"; };
+		B41B216E782B6A93E915DAD6 /* Pods-Google_Sign_In.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google_Sign_In.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Google_Sign_In/Pods-Google_Sign_In.debug.xcconfig"; sourceTree = "<group>"; };
+		F35F31C5BA181AEEC2DBF63E /* Pods_Google_Sign_In.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Google_Sign_In.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0B5BC398CB69C9FE624E176 /* Pods_Google_Sign_In.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				18067C351F1FC3FB008818E5 /* Google_Sign_In */,
 				18067C341F1FC3FB008818E5 /* Products */,
+				5623CE1D95A9630C22CB6E3B /* Pods */,
+				3C8CEC60640E661DF8034EBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				18067C3D1F1FC3FB008818E5 /* Assets.xcassets */,
 				18067C3F1F1FC3FB008818E5 /* LaunchScreen.storyboard */,
 				18067C421F1FC3FB008818E5 /* Info.plist */,
+				1858C7161F1FCDB000F50E9E /* GoogleService-Info.plist */,
 			);
 			path = Google_Sign_In;
+			sourceTree = "<group>";
+		};
+		3C8CEC60640E661DF8034EBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F35F31C5BA181AEEC2DBF63E /* Pods_Google_Sign_In.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5623CE1D95A9630C22CB6E3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B41B216E782B6A93E915DAD6 /* Pods-Google_Sign_In.debug.xcconfig */,
+				8B6F03AE5392009C8B8BC798 /* Pods-Google_Sign_In.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18067C451F1FC3FB008818E5 /* Build configuration list for PBXNativeTarget "Google_Sign_In" */;
 			buildPhases = (
+				12FB54978FD5F8D6E6C116EE /* [CP] Check Pods Manifest.lock */,
 				18067C2F1F1FC3FA008818E5 /* Sources */,
 				18067C301F1FC3FA008818E5 /* Frameworks */,
 				18067C311F1FC3FA008818E5 /* Resources */,
+				F1A87DB660D2BB0A2B245C6B /* [CP] Embed Pods Frameworks */,
+				EE8D50D4D49CEAF76F110087 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				18067C411F1FC3FB008818E5 /* LaunchScreen.storyboard in Resources */,
+				1858C7171F1FCDB000F50E9E /* GoogleService-Info.plist in Resources */,
 				18067C3E1F1FC3FB008818E5 /* Assets.xcassets in Resources */,
 				18067C3C1F1FC3FB008818E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12FB54978FD5F8D6E6C116EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EE8D50D4D49CEAF76F110087 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Google_Sign_In/Pods-Google_Sign_In-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1A87DB660D2BB0A2B245C6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Google_Sign_In/Pods-Google_Sign_In-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18067C2F1F1FC3FA008818E5 /* Sources */ = {
@@ -256,11 +335,12 @@
 		};
 		18067C461F1FC3FB008818E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B41B216E782B6A93E915DAD6 /* Pods-Google_Sign_In.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Google_Sign_In/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "rsku.com.Google-Sign-In";
+				PRODUCT_BUNDLE_IDENTIFIER = rsku.com.GoogleSignIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -268,11 +348,12 @@
 		};
 		18067C471F1FC3FB008818E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B6F03AE5392009C8B8BC798 /* Pods-Google_Sign_In.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Google_Sign_In/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "rsku.com.Google-Sign-In";
+				PRODUCT_BUNDLE_IDENTIFIER = rsku.com.GoogleSignIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -297,6 +378,7 @@
 				18067C471F1FC3FB008818E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
